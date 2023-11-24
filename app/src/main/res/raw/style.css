@@ -107,6 +107,7 @@ textarea {
 ::placeholder {
   color: rgba(0, 0, 0, 0.3);
   color: var(--weui-FG-2);
+  color: rgba(96, 96, 96, 0.5);
 }
 body {
   --weui-BG-0: #ededed;
@@ -1023,7 +1024,6 @@ input.weui-btn_mini {
   color: var(--weui-FG-1);
 }
 .weui-cells {
-  margin-top: 8px;
   background-color: #fff;
   background-color: var(--weui-BG-2);
   overflow: hidden;
@@ -1311,7 +1311,7 @@ input.weui-btn_mini {
   -webkit-appearance: none;
   background-color: transparent;
   font-size: inherit;
-  color: inherit;
+  color: gray;
   height: 1.41176471em;
   line-height: 1.41176471;
 }
@@ -2525,7 +2525,6 @@ page {
   margin-top: 0;
 }
 .weui-cells__group_form {
-  margin-top: 24px;
 }
 .weui-cells__group_form .weui-cells {
   margin-left: 16px;
@@ -2606,14 +2605,12 @@ page {
   -webkit-box-align: initial;
   -webkit-align-items: initial;
   align-items: initial;
-  padding-top: 8px;
   padding-bottom: 8px;
 }
 .weui-cells__group_form .weui-cell_wrap .weui-cell__hd {
   padding-right: 0;
 }
 .weui-cells__group_form .weui-cell_wrap .weui-label {
-  margin-top: 8px;
 }
 .weui-cells__group_form .weui-cell_wrap .weui-cell__bd {
   display: -webkit-box;
@@ -2642,9 +2639,9 @@ page {
   line-height: 2;
   border-radius: 6px;
   color: #06ae56;
-  color: var(--weui-BTN-DEFAULT-COLOR);
+  /*color: var(--weui-BTN-DEFAULT-COLOR);*/
   background-color: #f2f2f2;
-  background-color: var(--weui-BTN-DEFAULT-BG);
+  /*background-color: var(--weui-BTN-DEFAULT-BG);*/
 }
 .weui-cells__group_form .weui-vcode-btn:before {
   display: none;
@@ -2691,12 +2688,6 @@ page {
   border-radius: 0;
 }
 .weui-form {
-  padding: 56px 0 0;
-  padding: calc(56px + constant(safe-area-inset-top))
-    constant(safe-area-inset-right) constant(safe-area-inset-bottom)
-    constant(safe-area-inset-left);
-  padding: calc(56px + env(safe-area-inset-top)) env(safe-area-inset-right)
-    env(safe-area-inset-bottom) env(safe-area-inset-left);
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -2704,7 +2695,6 @@ page {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   flex-direction: column;
-  line-height: 1.4;
   min-height: 100%;
   box-sizing: border-box;
   background-color: #fff;
@@ -2740,7 +2730,6 @@ page {
   min-width: 0;
 }
 .weui-form__text-area {
-  padding: 0 32px;
   color: rgba(0, 0, 0, 0.9);
   color: var(--weui-FG-0);
   text-align: center;

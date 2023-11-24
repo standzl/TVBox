@@ -2,7 +2,7 @@ package com.github.catvod.crawler;
 
 import android.content.Context;
 
-import com.github.tvbox.osc.util.OkGoHelper;
+import com.github.tvbox.osc.bbox.util.OkGoHelper;
 
 import org.json.JSONObject;
 
@@ -15,7 +15,10 @@ public abstract class Spider {
 
     public static JSONObject empty = new JSONObject();
 
+    protected static Context mContext;
+
     public void init(Context context) {
+        mContext = context;
     }
 
     public void init(Context context, String extend) {
