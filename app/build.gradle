@@ -17,10 +17,10 @@ android {
             def oldFile = output.outputFile
             def newName = '';
             //只有release编译时生效
-            if(variant.buildType.name.equals('release')){
+            if(variant.buildType.name == 'release'){
                 // APK输出文件名规则：极剪-版本名-.apk
 //                def releaseApkName = "app_${variant.buildType.name}.apk"
-                def releaseApkName = "Jade_SHJ_${releaseTime()}_${variant.buildType.name}.apk"
+                def releaseApkName = "TVBox_${releaseTime()}_${variant.buildType.name}.apk"
                 // 设置apk输出文件夹
                 output.getPackageApplication().outputDirectory = new File(project.rootDir.absolutePath + "/Release")
                 // 设置apk输出文件名
